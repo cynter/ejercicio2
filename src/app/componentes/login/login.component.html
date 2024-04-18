@@ -1,0 +1,11 @@
+<h1>Login</h1>
+
+<p>Nombre: </p>
+<input type="text" [(ngModel)]="usuario.nombre">
+<p>Clave: </p>
+<input type="password" [(ngModel)]="usuario.clave">
+<br><br>
+<button (click)="validarUsuario()">Ingresar</button>
+
+<app-bienvenido *ngIf="mostrarBienvenido" ></app-bienvenido>
+<app-error *ngIf="mostrarError" ></app-error>
